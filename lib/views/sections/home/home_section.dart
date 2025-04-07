@@ -46,17 +46,16 @@ class HomeSection extends StatelessWidget {
             mainAxisSize: MainAxisSize.max,
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
-              Text(
+              SelectableText(
                 textAlign: TextAlign.center,
                 'Zakiyuddin Rahman',
-                
                 textScaler: TextScaler.linear(getTextScale()),
                 style: Theme.of(context)
                     .textTheme
                     .displayMedium
                     ?.copyWith(color: Colors.white),
               ),
-              Text(
+              SelectableText(
                 textAlign: TextAlign.center,
                 'Software Developer',
                 textScaler: TextScaler.linear(getTextScale()),
@@ -70,10 +69,9 @@ class HomeSection extends StatelessWidget {
                   horizontal: 16.0,
                   vertical: 8,
                 ),
-                child: RichText(
+                child: SelectableText.rich(
                   textAlign: TextAlign.center,
-                  textScaler: TextScaler.linear(getTextScale()),
-                  text: TextSpan(
+                  TextSpan(
                     style: Theme.of(context).textTheme.headlineSmall?.copyWith(
                           color: Colors.white,
                         ),

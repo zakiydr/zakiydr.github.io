@@ -24,8 +24,8 @@ class Footer extends StatelessWidget {
     );
   }
 
-  Text _buildCredit(BuildContext context) {
-    return Text(
+  Widget _buildCredit(BuildContext context) {
+    return SelectableText(
       "2025 \u00a9 Zakiyuddin Rahman",
       style: Theme.of(context)
           .textTheme

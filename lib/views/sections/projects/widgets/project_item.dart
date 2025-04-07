@@ -109,7 +109,7 @@ class ProjectItem extends StatelessWidget {
           if (detail != null)
             Padding(
               padding: const EdgeInsets.symmetric(vertical: 8.0),
-              child: Text(
+              child: SelectableText(
                 textAlign: TextAlign.justify,
                 detail!,
                 style: Theme.of(context).textTheme.bodyLarge,
